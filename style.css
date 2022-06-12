@@ -1,0 +1,250 @@
+/* CSS style */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.78;
+}
+
+/* Logo */
+.logo{
+    margin: 8px 8px;
+}
+#navbar img{
+    height: 50px;
+    margin: 5px 5px;
+}
+
+/* List Styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+   text-decoration: none;
+   display: block;
+  padding: 0px 30px;
+  font-size: 1.3rem;
+  color:rgb(49, 172, 255);
+  font-family: 'Permanent Marker', cursive;
+  
+}
+#navbar ul li a:hover{
+   background-color: white;
+   border-radius: 20px;
+}
+
+/* Home-Section */
+.home-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 521px;  
+    padding: 7px 200px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.home-section p{
+   color: rgb(255, 111, 0);
+   font-weight: bold;
+
+}
+.home-section::before{
+  content: ""; 
+  background: url('background/treadmill-5030966_1920.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 614px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+
+/* Services-section */
+#services{
+    display: flex;
+}
+#services #box{
+    border: 3px solid rgb(49, 172, 255);
+    margin: 20px;
+    padding: 22px;
+    border-radius: 20px;
+    background-color: rgb(215, 238, 255);
+}
+#services img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+/* Members section */
+
+#about-section{
+    position: relative;
+}
+.container{
+  display: flex;
+}
+#about-section h1{
+    color: white;
+    font-weight: bold;
+}
+.members{
+    /* border: 2px solid black;
+    background-color: white; */
+    border-radius: 22px;
+    padding: 12px;
+    color: white;
+    margin: 42px;
+}
+.members img{
+    display: block;
+    margin: auto;
+    height: 80px;
+    border-radius: 50%;
+}
+#about-section::before{
+    content: "";
+    background: url('background/wood-591631_1920.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 475px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+/* Conatct */
+#contact{
+    color: white;
+    position: relative;
+}
+.form-container{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    margin: 20px;
+}
+#contact::before{
+    content: "";
+    background: url('background/gym-girl-1391368_1920.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 686px;
+    width: 100%;
+    z-index: -1;
+}
+.form-container form{
+    width: 40%;
+}
+.form-container input, 
+.form-container textarea{
+    width: 100%;
+    padding: 6px;
+    font-size: 0.9rem;
+    font-family: 'Permanent Marker', cursive;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+.form-group{
+    margin: 8px;
+}
+.form-container label{
+    font-size: 1.3rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 12px;
+}
+
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 12px;    
+}
+.h-secondary{
+    font-size: 2.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 12px;    
+}
+.h-ternary{
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 12px;    
+}
+p{
+    font-family: 'Permanent Marker', cursive;
+    padding: 12px;
+    font-size: 1.2rem; 
+}
+.center{
+    text-align: center;
+}
+
+.home-section button{
+    margin-top: 40px;
+    width: 100px;
+    padding: 6px 7px;
+    font-size: 1.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    
+}
+.home-section button:hover{
+   background-color: rgb(49, 172, 255);
+   color: white;
+}
+
+.form-btn{
+    margin-top: 32px;
+    width: 101%;
+    border: 3px solid black;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    padding: 4px;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    cursor: pointer;
+   }
+   .form-btn:hover{
+    background-color: rgb(49, 172, 255);
+    color: white;
+   }
+
